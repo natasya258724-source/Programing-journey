@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Calon Siswa Baru SMK</title>
+</head>
+<body>
+    <h2 align="center">FORMULIR PENDAFTARAN CALON SISWA BARU SMK</h2>
+    <hr>
+    <form>
+        <h3>BIODATA SISWA</h3>
+        <table>
+            <tr>
+                <td>No. UN SMP/MTs/Sederajat</td>
+                <td><input type="number" name="no_un"></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Orangtua/Wali</td>
+                <td><input type="text" name="ortu"></td>
+            </tr>
+            <tr>
+                <td>Alamat (sesuaiKK/KTP/SuratKet. (Domisilmin. 6 bln Ortu/Walimurid calon siswa))</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <td>Kota/Kabupaten</td>
+                <td><input type="text" name="kota"></td>
+            </tr>
+            <tr>
+                <td>Asal Sekolah</td>
+                <td><input type="text" name="asal_sekolah"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama">
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </hr>
+        <h3>PENILAIAN</h3>
+        <hr>
+        <table>
+            <tr>
+                <td>Matematika</td>
+                <td><input type="number" name="matematika"></td>
+            </tr>
+            <tr>
+                <td>Bahasa Indonesia</td>
+                <td><input type="number" name="bindo"></td>
+            </tr>
+            <tr>
+                <td>Bahasa Inggris</td>
+                <td><input type="number" name="bing"></td>
+            </tr>
+            <tr>
+                <td>Ilmu Pengetahuan Alam (IPA)</td>
+                <td><input type="number" name="ipa"></td>
+                <td>Jumlah NUN</td>
+                <td><input type="number" name="jumlah_nun"></td>
+            </tr>
+            <tr>
+                <td>Nilai Bonus Prestasi (NBP)</td>
+                <td><input type="number" name="nbp"></td>
+            </tr>
+            <tr>
+                <td>Jumlah Total Nilai Akhir PPDB (NUN + NBP)</td>
+                <td><input type="number" name="total"></td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Kirim Formulir">
+    </hr>
+    </form>
+</body>
+</html>

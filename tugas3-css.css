@@ -1,0 +1,22 @@
+/* Stylees for the external CSS file */
+body {
+    font-family: 'Times New Roman';
+    background-color: beige;
+    margin: 10;
+    padding-right: 0;
+}
+h1 {
+    color: black;
+    text-align: center;
+    margin-right: 0;
+}
+h2 {
+    color: black;
+    text-align: left;
+    margin-right: 0;
+}
+p {
+    color: blue;
+    line-height: 1.5;
+    padding: 12px;
+}
