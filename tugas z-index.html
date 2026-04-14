@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas Z-Index</title>
+<style>
+img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.gambar1 {
+  top: 50px;
+  left: 50px;
+  z-index: 3; /* paling depan */
+}
+
+/* Gambar 2 di tengah */
+.gambar2 {
+  top: 100px;
+  left: 100px;
+  z-index: 2; /* tengah */
+}
+
+/* Gambar 3 paling belakang */
+.gambar3 {
+  top: 150px;
+  left: 150px;
+  z-index: 1; /* belakang */
+}
+</style>
+</head>
+<body>
+<img src="trump.jpg" alt="Gambar 1" class="gambar1">
+<img src="Presiden Rusia.jpg" alt="Gambar 2" class="gambar2">
+<img src="img_forest.jpg.jpeg" alt="Gambar 3" class="gambar3">
+</body>
+</html>

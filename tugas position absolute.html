@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Position Absolute</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: lightgray;
+      border: 2px solid black;
+    }
+    .box {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: coral;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 80px;
+    }
+    #topLeft { top: 0; left: 0; }
+    #topRight { top: 0; right: 0; background-color: lightblue; }
+    #bottomLeft { bottom: 0; left: 0; background-color: lightgreen; }
+    #bottomRight { bottom: 0; right: 0; background-color: yellow; }
+  </style>
+</head>
+<body>
+  <h2>Absolute Position - 4 Sudut</h2>
+  <div class="container">
+    <div id="topLeft" class="box">1</div>
+    <div id="topRight" class="box">2</div>
+    <div id="bottomLeft" class="box">3</div>
+    <div id="bottomRight" class="box">4</div>
+  </div>
+</body>
+</html>
