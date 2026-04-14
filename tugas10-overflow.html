@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Overflow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin: 15px 0 5px;
+    }
+    article {
+      width: 400px;
+      height: 100px;       /* sengaja kecil agar teks meluap */
+      border: 1px solid black;
+      margin-bottom: 25px;
+      padding: 10px;
+      background-color: lightblue;
+      line-height: 1.5;
+    }
+    #article1 { overflow: visible; }
+    #article2 { overflow: hidden; }
+    #article3 { overflow: scroll; }
+    #article4 { overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>Belajar CSS Overflow</h1>
+
+  <h2>Overflow: visible</h2>
+  <article id="article1">
+    Overflow dengan nilai visible berarti konten 
+    yang lebih panjang dari kotak akan tetap ditampilkan
+     meskipun keluar dari batas wadah. Misalnya, jika kita 
+     menuliskan paragraf yang sangat panjang, teks tersebut 
+     akan terus muncul melewati garis kotak tanpa dipotong. 
+     Hal ini bisa berguna jika kita ingin memastikan semua 
+     informasi tetap terlihat, tetapi tampilan bisa menjadi 
+     kurang rapi karena teks keluar dari area yang ditentukan. 
+     Dalam praktik desain web, penggunaan visible biasanya jarang 
+     dipakai kecuali untuk tujuan tertentu.
+  </article>
+
+  <h2>Overflow: hidden</h2>
+  <article id="article2">
+    Overflow dengan nilai hidden akan memotong konten yang
+    melebihi ukuran kotak dan menyembunyikan sisanya. Jadi,
+    jika kita menuliskan paragraf panjang, hanya bagian yang
+    muat di dalam kotak yang akan terlihat, sedangkan sisanya
+    tidak ditampilkan. Properti ini sering digunakan untuk menjaga
+    tampilan agar tetap rapi, terutama ketika kita ingin membatasi
+    area teks atau gambar agar tidak keluar dari batas. Namun,
+    kelemahannya adalah pengguna tidak bisa melihat bagian konten
+     yang tersembunyi, sehingga informasi tambahan bisa hilang dari
+      pandangan.
+  </article>
+
+  <h2>Overflow: scroll</h2>
+  <article id="article3">
+    Overflow dengan nilai scroll akan menambahkan scrollbar baik
+    horizontal maupun vertikal, meskipun konten tidak selalu meluap. 
+    Dengan cara ini, pengguna dapat menggulir untuk melihat seluruh isi 
+    konten yang panjang. Misalnya, jika kita menuliskan artikel dengan 
+    banyak kalimat, pengguna bisa menggulir ke bawah untuk membaca semuanya. Kekurangannya adalah scrollbar selalu muncul, bahkan ketika tidak diperlukan, sehingga tampilan bisa terlihat kurang bersih. Namun, kelebihannya adalah akses penuh terhadap konten tetap terjamin.
+  </article>
+
+  <h2>Overflow: auto</h2>
+  <article id="article4">
+    Overflow dengan nilai auto mirip dengan scroll, tetapi scrollbar 
+    hanya muncul jika memang diperlukan. Jika konten muat di dalam 
+    kotak, tidak ada scrollbar yang ditampilkan. Namun jika konten 
+    lebih panjang, scrollbar otomatis muncul sehingga pengguna bisa 
+    menggulir untuk membaca seluruh isi. Properti ini lebih fleksibel 
+    dan sering digunakan dalam desain web modern karena menjaga tampilan 
+    tetap bersih sekaligus responsif. Dengan auto, kita mendapatkan 
+    keseimbangan antara keteraturan tampilan dan kemudahan akses konten.
+  </article>
+</body>
+</html>
